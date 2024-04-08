@@ -80,7 +80,7 @@ async def dont_disturb_handler(query: CallbackQuery, scheduler: AsyncIOScheduler
     await database.add_dont_disturb(sku=sku)
 
     if not scheduler.get_job(f'sku', 'default'):
-        scheduler.add_job(disable_dont_disturb, 'interval', start_date=datetime.now(), minutes=1, id=f'{sku}',
+        scheduler.add_job(disable_dont_disturb, 'interval', start_date=datetime.now(), days=7, id=f'{sku}',
                           args=(database, sku,))
         scheduler.start()
 
