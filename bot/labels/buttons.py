@@ -1,8 +1,1 @@
-# USER
-USER_BTN = 'Юзер кнопка'
-
-# ADMIN
-ADMIN_BTN = 'Админ кнопка'
-
-# OTHER
-CLOSE_BTN = 'Закрыть'
+DONT_DISTURB_BTN = 'Принято к сведению'
